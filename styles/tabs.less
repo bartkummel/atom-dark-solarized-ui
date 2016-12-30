@@ -4,13 +4,13 @@
 @tab-top-padding: 5px;
 @tab-bottom-border-height: 5px;
 @tab-border: 1px solid @tab-border-color;
-@tab-bar-bottom-border-color: #111;
+@tab-bar-bottom-border-color: @base03;
 @tab-max-width: 160px;
 
 .tab-bar {
   height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
   background: @tab-bar-background-color;
-  box-shadow: inset 0 -8px 8px -4px rgba(0,0,0, .15);
+  box-shadow: inset 0 -8px 8px -4px fade(@base03, 15%);
   padding: 0 10px 0 25px;
   overflow-x: auto;
   overflow-y: hidden;
@@ -44,9 +44,10 @@
 
     transition: color .1s ease-in;
     border: none;
+    box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px fade(@base03, 10%);
 
     &, &:before, &:after {
-      background-image: -webkit-linear-gradient(top, lighten(#333, 7%), #333);
+      background-image: -webkit-linear-gradient(top, @base02, @base03);
       height: @tab-height;
     }
 
@@ -62,7 +63,7 @@
     &:before {
       left: -14px;
       border-top-left-radius: @tab-radius;
-      box-shadow: inset 1px 1px 0 @tab-border-color, -4px 0px 4px rgba(0,0,0,.1);
+      box-shadow: inset 1px 1px 0 @tab-border-color, -4px 0px 4px fade(@base03, 10%);
       -webkit-transform: skewX(-@tab-skew);
     }
 
@@ -70,7 +71,7 @@
     &:after {
       right: -14px;
       border-top-right-radius: @tab-radius;
-      box-shadow: inset -1px 1px 0 @tab-border-color, 4px 0px 4px rgba(0,0,0,.1);
+      box-shadow: inset -1px 1px 0 @tab-border-color, 4px 0px 4px fade(@base03, 10%);
       -webkit-transform: skewX(@tab-skew);
     }
 
@@ -109,7 +110,7 @@
   .tab.active {
     z-index: 1;
     color: @text-color-highlight;
-    box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
+    box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px fade(@base03, 10%);
 
     .close-icon {
       line-height: @tab-height - 1px;
@@ -122,11 +123,11 @@
     }
 
     &:before {
-      box-shadow: inset 1px 1px 0 @tab-border-color, -4px -4px 4px rgba(0,0,0,.1);
+      box-shadow: inset 1px 1px 0 @tab-border-color, -4px -4px 4px fade(@base03, 10%);
     }
 
     &:after {
-      box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
+      box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px fade(@base03, 10%);
     }
   }
 
