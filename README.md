@@ -4,4 +4,4 @@ A dark [Solarized](http://ethanschoonover.com/solarized) theme, based on the def
 
 ![Screenshot](https://raw.githubusercontent.com/bartkummel/atom-dark-ui/master/screenshot.png)
 
-This theme is not released yet. To use it, add it as a Git theme, via **Settings** > **Install** > and then paste the GitHub URL of this repo in the search box. Any feedback is more than welcome.
+This theme a work in progress. Any feedback is more than welcome.
