@@ -1,9 +1,5 @@
-# Atom Dark UI theme
+# Atom Dark Solarized UI theme
 
-A dark UI theme for Atom.
+A dark [Solarized](http://ethanschoonover.com/solarized) theme, based on the default [Atom Dark UI theme](https://github.com/atom/atom-dark-ui). Meant to use in combination with the [Solarized Dark Syntax theme](git@github.com:atom/solarized-dark-syntax.git).
 
-This theme is installed by default with Atom and can be activated by going to
-the _Themes_ section in the Settings view (`cmd-,`) and selecting it from the
-_UI Themes_ drop-down menu.
-
-![](https://f.cloud.github.com/assets/671378/2265086/c6897dba-9e7b-11e3-945d-551cac610717.png)
+This theme is not released yet. To use it, add it as a Git theme, via **Settings** > **Install** > and then paste the GitHub URL of this repo in the search box. Any feedback is more than welcome.
