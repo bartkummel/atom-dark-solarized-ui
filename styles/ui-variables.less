@@ -26,7 +26,7 @@
 
 @text-color-info: @blue;
 @text-color-success: @green;
-@text-color-warning: @orange;
+@text-color-warning: @yellow;
 @text-color-error: @red;
 
 @text-color-ignored: @text-color-subtle;
@@ -35,10 +35,10 @@
 @text-color-modified: @text-color-warning;
 @text-color-removed: @text-color-error;
 
-@background-color-info: lighten(@text-color-info, 15%);
-@background-color-success: lighten(@text-color-success, 15%);
-@background-color-warning:lighten(@text-color-warning, 15%);
-@background-color-error: lighten(@text-color-error, 15%);
+@background-color-info: darken(@text-color-info, 15%);
+@background-color-success: darken(@text-color-success, 15%);
+@background-color-warning:darken(@text-color-warning, 15%);
+@background-color-error: darken(@text-color-error, 15%);
 @background-color-highlight: @base01;
 @background-color-selected: @base01;
 
@@ -82,9 +82,9 @@
 @scrollbar-background-color: @base03; // Needs to be opaque -> atom/atom/issues/4578
 @scrollbar-color: fade(@base03, 0.5);
 
-@ui-site-color-1: @background-color-success; // green
-@ui-site-color-2: @background-color-info; // blue
-@ui-site-color-3: @background-color-warning; // orange
+@ui-site-color-1: @green;//  @background-color-success; // green
+@ui-site-color-2: @blue; //@background-color-info; // blue
+@ui-site-color-3: @orange;//@background-color-warning; // orange
 @ui-site-color-4: @magenta;  // purple
 @ui-site-color-5: @yellow; // yellow
 
